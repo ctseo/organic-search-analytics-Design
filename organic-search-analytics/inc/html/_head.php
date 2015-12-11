@@ -10,6 +10,9 @@ if( !strpos( $_SERVER['SCRIPT_NAME'], "upgrade.php" ) ) {
 		<title><?php echo $titleTag; ?></title>
 
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lemon' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/lib/jquery/jquery-ui-1.11.2.css">
 
 		<script language="javascript" type="text/javascript" src="js/lib/jquery/jquery-1.11.3.min.js"></script>
@@ -26,6 +29,7 @@ if( !strpos( $_SERVER['SCRIPT_NAME'], "upgrade.php" ) ) {
 			<script language="javascript" type="text/javascript" src="js/lib/jqplot/plugins/jqplot.canvasTextRenderer.min.js"></script>
 			<script language="javascript" type="text/javascript" src="js/lib/jqplot/plugins/jqplot.highlighter.min.js"></script>
 			<link rel="stylesheet" type="text/css" href="css/lib/jqplot/jquery.jqplot.css" />
+			
 		<?php } ?>
 
 		<?php if( isset( $GLOBALS['scriptName'] ) && $GLOBALS['scriptName'] == "settings.php" ) { ?>
@@ -35,11 +39,14 @@ if( !strpos( $_SERVER['SCRIPT_NAME'], "upgrade.php" ) ) {
 
 	<body>
 		<header>
-			<div class="floatleft">
-				<span><a href="index.php">Home</a></span>
-				<span><a href="data-capture.php">Data Capture</a></span>
-				<span><a href="settings.php">Settings</a></span>
-				<span><a href="report.php">Reports</a></span>
+			<div id="menu">
+				<div class="logo"><a href="index.php">Organic Search Analytics</a></div>
+				<div class="primary">
+				<a href="index.php">Home</a>
+				<a href="data-capture.php">Data Capture</a>
+				<a href="settings.php">Settings</a>
+				<a href="report.php">Reports</a>
+				</div>
 			</div>
 			<div class="floatright">
 				<span class="donate">
