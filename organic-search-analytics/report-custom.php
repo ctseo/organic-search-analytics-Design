@@ -219,7 +219,7 @@
 
 			<?php if( $sortDir == 'desc' ) { $rows = array_reverse( $rows ); } ?>
 
-			<table class="sidebysidetable">
+			<table id="sidebysidetable" class="date">
 				<tr>
 					<td>Date</td>
 				</tr>
@@ -230,7 +230,7 @@
 				?>
 			</table>
 
-			<table class="sidebysidetable">
+			<table id="sidebysidetable" class="queries">
 				<tr>
 					<td>Queries</td><td>Impressions</td><td>Clicks</td><td>Avg Position</td>
 				</tr>
@@ -241,7 +241,7 @@
 				?>
 			</table>
 
-			<table class="sidebysidetable">
+			<table id="sidebysidetable" class="ctr">
 				<tr>
 					<td>CTR</td>
 				</tr>
